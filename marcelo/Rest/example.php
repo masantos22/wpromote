@@ -33,17 +33,13 @@
 
 	class get_connection{
 		public static $con;
-		
 		public function __construct(){
 
 		}
-		
 		public static function get(){
 			if(!self::$con)
-				self::$con = new mysqli('');
-
+				self::$con = new mysqli('','','','');
 			return self::$con;		
-		
 		}
 	}
 

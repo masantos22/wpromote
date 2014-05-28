@@ -40,7 +40,7 @@
 		
 		public static function get(){
 			if(!self::$con)
-				self::$con = new mysqli('127.0.0.1','root','esqueci22','marcelo');
+				self::$con = new mysqli('','','','');
 
 			return self::$con;		
 		

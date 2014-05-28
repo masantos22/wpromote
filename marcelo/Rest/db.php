@@ -1,9 +1,9 @@
 <?php
 
-define('MYDB_HOST','127.0.0.1');
-define('MYDB_NAME','wpromote');
-define('MYDB_USER','root');
-define('MYDB_PASS','esqueci22');
+define('MYDB_HOST','');
+define('MYDB_NAME','');
+define('MYDB_USER','');
+define('MYDB_PASS','');
 define('DB_DEBUG',true);
 
 

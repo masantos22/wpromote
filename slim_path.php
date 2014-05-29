@@ -6,8 +6,7 @@
 	}
 	// wpromote
 	else{
-//		require '/home/marceloazevedo/Project/vendor/autoload.php';
-//		use Slim\Slim;
+		require '/Users/marceloazevedo/Project/vendor/autoload.php';
 	}
 	
 ?>

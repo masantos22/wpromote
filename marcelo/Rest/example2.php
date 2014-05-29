@@ -1,9 +1,6 @@
 <?php
 	require_once('db.php');
-
-//	require '../vendor/autoload.php';
-
-	include '../../slim_path.php';
+	require_once ('../../slim_path.php');
 	use Slim\Slim;
 	$app = new \Slim\Slim();
 

@@ -6,7 +6,7 @@
 	}
 	// wpromote
 	else{
-		require '/Users/marceloazevedo/Project/vendor/autoload.php';
+		require '/Users/marceloazevedo/Project/marcelo/vendor/autoload.php';
 	}
 	
 ?>

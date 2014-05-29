@@ -2,8 +2,6 @@
 
 include_once('../../db_default.php');
 
-
-
 class dbinst{
     private static $session;
     public static function db(){

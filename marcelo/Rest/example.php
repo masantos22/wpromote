@@ -1,6 +1,9 @@
 <?php
 
-	require '../vendor/autoload.php';
+//	require '../vendor/autoload.php';
+	
+	require '../../slim_path.php';
+	require '../../db_default.php';
 	use Slim\Slim;
 	$app = new \Slim\Slim();
 	
@@ -37,8 +40,9 @@
 
 		}
 		public static function get(){
-			if(!self::$con)
-				self::$con = new mysqli('','','','');
+			if(!self::$con){
+				self::$con = new mysqli(MYDB_HOST,MYDB_USER,MYDB_PASS,MYDB_NAME);
+			}
 			return self::$con;		
 		}
 	}

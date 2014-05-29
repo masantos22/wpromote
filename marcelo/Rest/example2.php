@@ -1,7 +1,9 @@
 <?php
 	require_once('db.php');
 
-	require '../vendor/autoload.php';
+//	require '../vendor/autoload.php';
+
+	include '../../slim_path.php';
 	use Slim\Slim;
 	$app = new \Slim\Slim();
 
@@ -10,7 +12,7 @@
 
 	$middle = function ($role) {
     		return function () use ($role) {
-			echo "OK\n";
+			echo "Middleware\n";
 		};
 	};
 

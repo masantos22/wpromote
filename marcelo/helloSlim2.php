@@ -1,7 +1,6 @@
 <?php
-	require 'vendor/autoload.php';
+	require '../slim_path.php';
 	
-
 	$app = new \Slim\Slim();
 
 	$app->get('/:name', function ($name) {

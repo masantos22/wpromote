@@ -1,0 +1,4 @@
+marcelo/composer*
+marcelo/vendor*
+.DS_Store
+db_default.php

@@ -1,0 +1,5 @@
+Lets build an example of file to read
+from it
+and see what happens
+
+next

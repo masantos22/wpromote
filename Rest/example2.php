@@ -22,6 +22,7 @@
 	$app->put('/clients/:id','update_client'); 
 	$app->delete('/clients/:id','delete_client');
 //	content = $app->request->getMediaType(); //get the Content-Type from the request)
+//	$app->response->setStatus(500);
 	$app->run();
 
 
@@ -71,6 +72,17 @@
 	}
 	function add_client(){
 		$request = Slim::getInstance()->request();
+		$app = Slim::getInstance();
+		//$app->halt(500);
+		$param = $request->post();
+		foreach($param as $k=>$v)
+			print "$k: $v\n";
+		print_r ($param);
+		//header('HTTP/1.1 404');
+		print "\nBODY:\n";
+		
+		$body = $request->getBody();
+		print_r($body);die();
 		// check if it is a JSON object
 		if($c = json_decode($request->getBody())){
 			//convert object to array

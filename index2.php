@@ -1,0 +1,5 @@
+<?PHP
+
+	PRINT "EUREKAELLO WORLD!";
+
+?>
